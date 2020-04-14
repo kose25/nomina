@@ -120,7 +120,9 @@ public class Concepto implements Serializable {
 
     @Override
     public String toString() {
-        return "DTO.Concepto[ codconcepto=" + codconcepto + " ]";
+        return "El codigo del concepto es =" + codconcepto + "\n"
+                + "Del tipo: " + this.tipo +  "\n"
+                + "Descripcion : " + this.descripcion;
     }
     
 }
