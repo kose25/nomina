@@ -36,7 +36,7 @@ public class Test {
         
         
         //Empleado = 	codigo cedula nombre fechanacimiento fecharetiro
-        Empleado nuevo = new Empleado("11513","109011111","Brayan",new Date(1998,01,29),new Date(2020,01,01),new Date(2020,12,01));
+        Empleado nuevo = new Empleado("11514","109111111","Carlos",new Date((1998-1900),01,29),new Date((2020-1900),01,01),new Date((2020-1900),12,01));
         try{
         empleadoDAO.create(nuevo);
         System.out.println("Se ha creado con éxito:"+nuevo.toString());
