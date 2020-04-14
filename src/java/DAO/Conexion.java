@@ -10,11 +10,13 @@ import javax.persistence.Persistence;
 
 /**
  *
- * @author stive
+
+ * @author kose_
  */
 public class Conexion {
     private static Conexion conexion;
     private EntityManagerFactory bd; 
+
  
     private Conexion() {
         this.bd=Persistence.createEntityManagerFactory("nominaPU");
@@ -22,6 +24,7 @@ public class Conexion {
     }
      
      
+
     public static Conexion getConexion()
     {
         if(conexion==null)
@@ -30,8 +33,9 @@ public class Conexion {
         }
     return conexion;
     }
- 
-    public EntityManagerFactory getBd() {
+
+  public EntityManagerFactory getBd() {
         return bd;
     }
+
 }
