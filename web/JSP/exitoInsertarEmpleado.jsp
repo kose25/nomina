@@ -13,5 +13,6 @@
     </head>
     <body>
         <h1>Felicidades empleado creado</h1>
+        <a href="index.html">Inicio</a>
     </body>
 </html>

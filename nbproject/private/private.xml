@@ -3,12 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/java/DTO/Concepto.java</file>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/java/DAO/Conexion.java</file>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/java/DAO/ConceptoJpaController.java</file>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/java/TEST/Test.java</file>
-            <file>file:/C:/Users/stive/Documents/WEB/2020/nomina/src/java/DTO/Empleado.java</file>
+            <file>file:/C:/Users/kose_/Documents/NetBeansProjects/nomina/src/java/CONTROLLER/RegistrarEmpleado.java</file>
+            <file>file:/C:/Users/kose_/Documents/NetBeansProjects/nomina/src/java/CONTROLLER/BuscarEmpleado.java</file>
         </group>
     </open-files>
 </project-private>

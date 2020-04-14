@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Error Busqueda</h1>
+        
+        <a href="index.html">Inicio</a>
     </body>
 </html>

@@ -44,7 +44,7 @@ public class RegistrarEmpleado extends HttpServlet {
             
             Nomina nomina = new Nomina();
             if(nomina.insertarEmpleado(codigo, cedula, nombre, fechanacimiento, fechaingreso, fecharetiro)){
-                request.getSession().setAttribute("error", nomina);
+                request.getSession().setAttribute("nominaxd", nomina);
                 request.getRequestDispatcher("./JSP/exitoInsertarEmpleado.jsp").forward(request, response);
             }else{
             request.getSession().setAttribute("error", "Ha ocurrido un error al insertar");

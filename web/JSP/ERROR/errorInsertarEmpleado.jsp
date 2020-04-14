@@ -13,5 +13,6 @@
     </head>
     <body>
         <h1>Ocurrio un error</h1>
+        <a href="ndex.html">Inicio</a>
     </body>
 </html>

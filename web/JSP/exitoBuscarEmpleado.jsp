@@ -28,5 +28,6 @@
         <%=empleado.toString()%>
         
     </p>
+    <a href="index.html">Inicio</a>
     </body>
 </html>
