@@ -157,7 +157,10 @@ public class Empleado implements Serializable {
 
     @Override
     public String toString() {
-        return "DTO.Empleado[ codigo=" + codigo + " ]";
+        return "codigo=" + codigo + "\n"
+                + "Cedula: " + cedula + "\n"
+                + "Nombre: " + nombre + "\n"
+                + "Fecha de nacimiento: " + this.fechanacimiento;
     }
     
 }

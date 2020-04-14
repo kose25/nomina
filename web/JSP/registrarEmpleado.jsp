@@ -13,10 +13,12 @@
     </head>
     <body>
         <h1>Registrar Empleado</h1>
-        <form name="registrar" method="POST">
+        <form name="registrar" method="POST" action="../registrarEmpleado.do">
             <input type="number" name="codigo" value="" placeholder="ingrese codigo" required>
             <br>
             <input type="number" name="cedula" placeholder="ingrese cedula" min="1" required>
+            <br>
+            <input type="text" name="nombre" placeholder="ingrese el nombre" required>
             <br>
             <label>Fecha Nacimiento</label>
             <input type="date" name="fechaBorn" required>

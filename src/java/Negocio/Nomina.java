@@ -8,6 +8,8 @@ package Negocio;
 import DAO.Conexion;
 import DAO.EmpleadoJpaController;
 import DTO.Empleado;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -22,13 +24,13 @@ public class Nomina {
     EmpleadoJpaController empleadoDAO = new EmpleadoJpaController(con.getBd());
     List<Empleado> empleados = empleadoDAO.findEmpleadoEntities();
 
-    public boolean insertarEmpleado(String codigo, String cedula, String nombre, Date fechanacimiento, Date fechaingreso, Date fecharetiro) {
+    public boolean insertarEmpleado(String codigo, String cedula, String nombre, String fechanacimiento, String fechaingreso, String fecharetiro) throws ParseException {
         Empleado e = new Empleado();
         e.setCedula(cedula);
         e.setCodigo(codigo);
-        e.setFechaingreso(fechaingreso);
-        e.setFechanacimiento(fechanacimiento);
-        e.setFecharetiro(fecharetiro);
+        e.setFechaingreso(crearFecha(fechaingreso));
+        e.setFechanacimiento(crearFecha(fechanacimiento));
+        e.setFecharetiro(crearFecha(fecharetiro));
         e.setNombre(nombre);
 
         try {
@@ -46,6 +48,12 @@ public class Nomina {
         } else {
             return null;
         }
+    }
+    
+    private Date crearFecha(String fecha) throws ParseException {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
+        Date date = formatter.parse(fecha);
+        return date;
     }
 
 }

@@ -14,8 +14,8 @@
     <body>
         <h1>Buscar empleado</h1>
         <br>
-        <form name="buscar" method="POST">
-            <input type="number" placeholder="ingrese codigo" min="1" max="99999" required>
+        <form name="buscar" method="POST" action="../buscarEmpleado.do">
+            <input type="number" placeholder="ingrese codigo" min="1" max="99999" required name="codigo">
             <input type="submit" value="Buscar" >
         </form>
     </body>
